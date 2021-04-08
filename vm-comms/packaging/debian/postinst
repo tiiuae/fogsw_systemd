@@ -1,0 +1,3 @@
+#!/bin/bash
+
+systemctl enable communication_link.service videonode.service
