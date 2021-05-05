@@ -1,6 +1,7 @@
 [Unit]
 Description="RTSP/Mavlink protocol splitter bring-up"
-After=network.target
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple

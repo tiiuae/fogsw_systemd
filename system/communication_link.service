@@ -1,6 +1,7 @@
 [Unit]
 Description="Drone cloud communication link"
-After=network.target
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple
