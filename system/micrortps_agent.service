@@ -1,6 +1,7 @@
 [Unit]
 Description="micrortps_agent startup"
-After=network.target
+Requires=mesh-init.service
+After=mesh-init.service
 
 [Service]
 Type=simple

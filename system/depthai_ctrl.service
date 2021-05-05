@@ -1,6 +1,7 @@
 [Unit]
 Description="DepthAI control ROS2 node"
-After=network.target
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple
