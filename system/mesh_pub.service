@@ -7,7 +7,7 @@ After=mesh-init.service
 User=sad
 Group=sad
 Type=simple
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 run mesh_com mesh_publisher"
+ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 run mesh_com mesh_publisher --ros-args -r __ns:=/$DRONE_DEVICE_ID"
 
 [Install]
 WantedBy=multi-user.target
