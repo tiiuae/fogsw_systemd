@@ -1,7 +1,5 @@
 [Unit]
 Description=MAVLink Router
-Requires=mesh.service
-After=mesh.service
 
 [Service]
 Type=simple
