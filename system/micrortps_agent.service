@@ -8,6 +8,8 @@ Type=simple
 User=sad
 Group=sad
 ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; micrortps_agent -t UDP -r 2020 -s 2019 -n $DRONE_DEVICE_ID"
+Restart=on-failure
+RestartSec=1s
 
 [Install]
 WantedBy=multi-user.target
