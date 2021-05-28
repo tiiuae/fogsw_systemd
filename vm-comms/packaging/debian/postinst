@@ -1,3 +1,9 @@
 #!/bin/bash
 
 systemctl enable communication_link.service
+
+if [ -e /etc/systemd/system/mission_engine.service ];
+    systemctl enable mission_engine.service
+fi
+
+exit 0
