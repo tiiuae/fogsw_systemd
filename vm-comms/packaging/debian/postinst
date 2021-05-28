@@ -2,7 +2,7 @@
 
 systemctl enable communication_link.service
 
-if [ -e /etc/systemd/system/mission_engine.service ];
+if [ -e /etc/systemd/system/mission_engine.service ]; then
     systemctl enable mission_engine.service
 fi
 
