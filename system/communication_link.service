@@ -11,6 +11,7 @@ WorkingDirectory=~
 Restart=always
 RestartSec=2
 EnvironmentFile=/enclave/drone_device_id
+ExecStartPre=/bin/sleep 20
 ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; /usr/bin/communication_link -device_id $DRONE_DEVICE_ID -private_key /enclave/rsa_private.pem"
 
 [Install]
