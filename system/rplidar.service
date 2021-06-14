@@ -1,0 +1,13 @@
+[Unit]
+Description=Rplidar sensor service
+
+[Service]
+Type=simple
+User=sad
+Group=sad
+Restart=always
+RestartSec=2
+ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 launch fog_core sensors.launch.py"
+
+[Install]
+WantedBy=multi-user.target
