@@ -1,6 +1,6 @@
 #!/bin/bash
 
-systemctl enable agent_protocol_splitter.service communication_link.service micrortps_agent.service px4_mavlink_ctrl.service mavlink-router.service mesh-init.service mesh.service mesh_pub.service depthai_ctrl.service
+systemctl enable agent_protocol_splitter.service communication_link.service micrortps_agent.service px4_mavlink_ctrl.service mavlink-router.service mesh-init.service mesh.service mesh_pub.service depthai_ctrl.service navigation.service control_interface.service
 
 if [ -e /etc/systemd/system/mission_engine.service ]; then
     systemctl enable mission_engine.service
