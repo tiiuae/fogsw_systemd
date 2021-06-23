@@ -1,5 +1,7 @@
 [Unit]
 Description=Octomap and Navigation
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple

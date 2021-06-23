@@ -1,5 +1,7 @@
 [Unit]
 Description=Control Interface
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple
