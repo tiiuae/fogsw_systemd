@@ -1,5 +1,7 @@
 [Unit]
 Description=RP Lidar Service
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple
