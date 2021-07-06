@@ -1,7 +1,7 @@
 [Unit]
 Description=Octomap and Navigation
-Requires=mesh.service rplidar.service
-After=mesh.service rplidar.service
+Requires=mesh.service
+After=mesh.service
 
 [Service]
 Type=simple
@@ -10,8 +10,6 @@ Group=sad
 Restart=always
 RestartSec=2
 ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 launch navigation octomap_and_navigation.py"
-Restart=on-failure
-RestartSec=1s
 KillSignal=SIGINT
 
 [Install]
