@@ -1,7 +1,7 @@
 [Unit]
 Description=Control Interface
-Requires=mesh.service
-After=mesh.service
+Requires=mesh.service rplidar.service navigation.service
+After=mesh.service rplidar.service navigation.service
 
 [Service]
 Type=simple
@@ -12,6 +12,7 @@ RestartSec=2
 ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 launch control_interface control_interface.py"
 Restart=on-failure
 RestartSec=1s
+KillSignal=SIGINT
 
 [Install]
 WantedBy=multi-user.target
