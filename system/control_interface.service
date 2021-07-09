@@ -1,17 +1,14 @@
 [Unit]
 Description=Control Interface
-Requires=mesh.service
-After=mesh.service
 
 [Service]
 Type=simple
 User=sad
 Group=sad
 Restart=always
-RestartSec=2
+RestartSec=2s
 ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; ros2 launch control_interface control_interface.py"
-Restart=on-failure
-RestartSec=1s
+KillSignal=SIGINT
 
 [Install]
 WantedBy=multi-user.target
