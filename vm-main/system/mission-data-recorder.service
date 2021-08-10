@@ -17,8 +17,8 @@ ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; if [ ! -e /tmp/mission-data 
         -backend-url \"$MISSION_DATA_RECORDER_BACKEND_URL\" \
         -size-threshold \"$MISSION_DATA_RECORDER_SIZE_THRESHOLD\" \
         -topics \"$MISSION_DATA_RECORDER_TOPICS\" \
-        -dest-dir /tmp/mission-data" \
-        -extra-args \"--qos-profile-overrides-path,$MISSION_DATA_RECORDER_QOS_OVERRIDES\"
+        -dest-dir /tmp/mission-data \
+        -extra-args \"--qos-profile-overrides-path,$MISSION_DATA_RECORDER_QOS_OVERRIDES\""
 
 [Install]
 WantedBy=multi-user.target
