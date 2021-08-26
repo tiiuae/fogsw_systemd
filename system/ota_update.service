@@ -1,5 +1,5 @@
 [Unit]
-Description="Drone mission data recorder"
+Description="OTA updater daemon."
 Requires=update_agent.service
 After=update_agent.service
 
