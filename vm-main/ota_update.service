@@ -9,7 +9,7 @@ User=sad
 Group=sad
 Restart=always
 RestartSec=2
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; /opt/ros/foxy/bin/ota-update-daemon"
+ExecStart=/opt/ros/foxy/bin/ota-update-daemon
 
 [Install]
 WantedBy=multi-user.target
