@@ -8,7 +8,7 @@ Type=simple
 User=sad
 Group=sad
 WorkingDirectory=~
-Restart=always
+Restart=no
 RestartSec=2
 ExecStart=/bin/sh -c "/usr/bin/provisioning-agent"
 
