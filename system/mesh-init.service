@@ -7,8 +7,8 @@ Requires=network-online.target
 User=root
 Group=root
 Type=simple
-ExecStartPre=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh;/opt/ros/foxy/share/bin/mesh-ibss.sh ap"
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; /opt/ros/foxy/lib/mesh_com/mesh_executor"
+ExecStartPre=/bin/sh -c ". /opt/ros/galactic/setup_fog.sh;/opt/ros/galactic/share/bin/mesh-ibss.sh ap"
+ExecStart=/bin/sh -c ". /opt/ros/galactic/setup_fog.sh; /opt/ros/galactic/lib/mesh_com/mesh_executor"
 
 [Install]
 WantedBy=multi-user.target

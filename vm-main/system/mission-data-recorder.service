@@ -11,7 +11,7 @@ WorkingDirectory=~
 Restart=always
 RestartSec=2
 EnvironmentFile=/enclave/drone_device_id
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; if [ ! -e /tmp/mission-data ]; then mkdir /tmp/mission-data; fi; \
+ExecStart=/bin/sh -c ". /opt/ros/galactic/setup_fog.sh; if [ ! -e /tmp/mission-data ]; then mkdir /tmp/mission-data; fi; \
     /usr/bin/mission-data-recorder \
         -device-id \"$DRONE_DEVICE_ID\" \
         -backend-url \"$MISSION_DATA_RECORDER_BACKEND_URL\" \
