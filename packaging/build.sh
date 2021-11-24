@@ -8,5 +8,5 @@ cp ${build_dir}/packaging/debian/* ${dest_dir}/DEBIAN/
 
 mkdir -p ${dest_dir}/etc/systemd/system
 cp ${build_dir}/system/* ${dest_dir}/etc/systemd/system/
-mkdir -p ${dest_dir}/opt/ros/foxy
+mkdir -p ${dest_dir}/opt/ros/galactic
 

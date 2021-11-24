@@ -9,7 +9,7 @@ User=sad
 Group=sad
 Restart=always
 RestartSec=2
-ExecStart=/opt/ros/foxy/bin/ota-update-daemon
+ExecStart=/opt/ros/galactic/bin/ota-update-daemon
 
 [Install]
 WantedBy=multi-user.target
