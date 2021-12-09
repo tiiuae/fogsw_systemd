@@ -5,7 +5,7 @@ systemctl enable mesh-init.service mesh.service mesh_pub.service
 systemctl enable communication_link.service mission_engine.service mission-data-recorder.service provisioning-agent.service
 systemctl enable update_agent.service ota_update.service
 systemctl enable mocap_pose.service
-systemctl enable navigation.service control_interface.service octomap_server2.service bumper.service
+systemctl enable navigation.service control_interface.service octomap_server2.service bumper.service odometry2.service
 systemctl enable depthai_ctrl.service depthai_gstreamer_node.service
 
 exit 0

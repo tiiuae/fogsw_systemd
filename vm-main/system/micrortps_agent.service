@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=sad
 Group=sad
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; micrortps_agent -t UDP -r 2020 -s 2019 -n $DRONE_DEVICE_ID"
+ExecStart=/bin/sh -c ". /opt/ros/galactic/setup_fog.sh; micrortps_agent -t UDP -r 2020 -s 2019 -n $DRONE_DEVICE_ID"
 
 [Install]
 WantedBy=multi-user.target

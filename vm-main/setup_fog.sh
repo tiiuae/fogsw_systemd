@@ -7,4 +7,4 @@
 export DRONE_DEVICE_ID
 
 # Source ROS paths
-. /opt/ros/foxy/setup.sh
+. /opt/ros/galactic/setup.sh
