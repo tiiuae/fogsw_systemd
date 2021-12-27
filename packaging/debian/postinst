@@ -6,6 +6,6 @@ systemctl enable communication_link.service mission_engine.service mission-data-
 systemctl enable update_agent.service ota_update.service
 systemctl enable mocap_pose.service
 systemctl enable navigation.service control_interface.service octomap_server2.service bumper.service
-systemctl enable depthai_ctrl.service
+systemctl enable depthai_ctrl.service depthai_gstreamer_node.service
 
 exit 0

@@ -6,6 +6,6 @@ systemctl disable communication_link.service mission_engine.service mission-data
 systemctl disable update_agent.service ota_update.service
 systemctl disable mocap_pose.service
 systemctl disable navigation.service control_interface.service octomap_server2.service bumper.service
-systemctl disable depthai_ctrl.service
+systemctl disable depthai_ctrl.service depthai_gstreamer_node.service
 
 exit 0
