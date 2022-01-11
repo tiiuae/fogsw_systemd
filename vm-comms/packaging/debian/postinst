@@ -1,6 +1,6 @@
 #!/bin/bash
 
-systemctl enable communication_link.service
+systemctl enable cloud_link.service
 
 if [ -e /etc/systemd/system/mission_engine.service ]; then
     systemctl enable mission_engine.service

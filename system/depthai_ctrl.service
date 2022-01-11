@@ -9,7 +9,7 @@ User=sad
 Group=sad
 Restart=always
 RestartSec=10
-ExecStart=/bin/sh -c ". /opt/ros/foxy/setup_fog.sh; /opt/ros/foxy/lib/depthai_ctrl/depthai_ctrl --ros-args --remap __ns:=/$DRONE_DEVICE_ID -p address:=$RTSP_SERVER_ADDRESS/$DRONE_DEVICE_ID"
+ExecStart=/bin/sh -c ". /opt/ros/galactic/setup_fog.sh; /opt/ros/galactic/lib/depthai_ctrl/camera_node --ros-args --remap __ns:=/$DRONE_DEVICE_ID -p address:=$RTSP_SERVER_ADDRESS/$DRONE_DEVICE_ID"
 
 [Install]
 WantedBy=multi-user.target
