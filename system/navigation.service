@@ -1,5 +1,7 @@
 [Unit]
 Description=Navigation
+After=network-online.target
+Requires=network-online.target
 
 [Service]
 Type=simple
