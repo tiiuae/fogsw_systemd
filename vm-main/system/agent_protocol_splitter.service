@@ -1,5 +1,5 @@
 [Unit]
-Description="RTSP/Mavlink protocol splitter bring-up"
+Description="RTPS/Mavlink protocol splitter bring-up"
 After=network.target
 
 [Service]
