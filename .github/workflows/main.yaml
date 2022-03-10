@@ -2,7 +2,7 @@ name: main
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, DP-2360-sros-configuration-for-camera-nodes ]
   pull_request:
     branches: [ main ]
 
@@ -23,7 +23,7 @@ jobs:
           path: fogsw-ci-scripts
 
       # Run docker build
-      - name: Run fog-sw docker build
+      - name: Run fog-sw-sros docker build
         run: |
           set -eux
           mkdir bin
@@ -39,7 +39,7 @@ jobs:
         env:
           ARTIFACTORY_REPO: debian-public-local
           DISTRIBUTION: focal
-          COMPONENT: fog-sw
+          COMPONENT: fog-sw-sros
           ARCHITECTURE: amd64
           BUILD_NAME: fogsw-systemd
           CI: true
